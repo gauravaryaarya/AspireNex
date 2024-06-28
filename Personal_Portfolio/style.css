@@ -1,7 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#navbar{
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+}
+
+#mainlogo{
+    height: 10vh;
+    padding-left: 5vw;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25vw;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+    padding: 2vw;
+}
+
+#nav a:hover{
+    color: red;
+}
+
+#logotext{
+    font-size: 1.3vw;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+
+}
+
+#talk{
+    height: 7vh;
+    width: 9vw;
+    border-style: solid;
+    border-width: 0.17vw;
+    border-color: red;
+    border-radius: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6vw;
+    margin-left: 10vw;
+}
+
+#talk h1{
+    color: red;
+    font-size:1.6vw ;
+
+}
+
 #page1{
+    height: 100vh;
+    width: 100vw;
     background-color: red;
 }
 
 #page2{
+    height: 100vh;
+    width: 100vw;
     background-color: pink;
 }
