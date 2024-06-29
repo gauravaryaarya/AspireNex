@@ -15,6 +15,7 @@ html,body{
     width: 100vw;
     background-color: black;
     display: flex;
+    border-bottom: 0.1vw solid white;
 }
 
 #mainlogo{
@@ -26,7 +27,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 25vw;
+    padding-left: 18vw;
 }
 
 #nav a{
@@ -51,8 +52,8 @@ html,body{
 }
 
 #talk{
-    height: 7vh;
-    width: 9vw;
+    height: 5vh;
+    width: 8vw;
     border-style: solid;
     border-width: 0.17vw;
     border-color: red;
@@ -60,20 +61,137 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.6vw;
-    margin-left: 10vw;
+    margin-top: 1vw;
+    margin-left: 23vw;
 }
 
-#talk h1{
+#talk a{
     color: red;
-    font-size:1.6vw ;
+    font-size:1.3vw ;
+    text-decoration: none;
 
+}
+
+#talk a:hover{
+    color: rgb(135, 0, 0);
+    border-color:rgb(135, 0, 0) ;
 }
 
 #page1{
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+#page1 #textdiv h1 span{
+    color: red;
+}
+
+#page1 #textdiv h1{
+    color: white;
+    padding-top: 12vw;
+    padding-left: 10vw;
+    font-size: 3vw;
+}
+
+#page1 #textdiv h2{
+    color: white;
+    font-size: 1.2vw;
+    padding-left: 10vw;
+    padding-top: 6vw;
+    word-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
+}
+
+#picdiv img{
+    padding-top: 6vw;
+    width: 25vw;
+    padding-left: 9vw;
+}
+
+#scroller{
+    padding-top: 11vw;
+    margin-top: 470px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   position: absolute;
+   z-index: 3;
+    
+    
+}
+
+#scroller::-webkit-scrollbar{
+
+    display: none;
+}
+
+#scroller-in-1{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+#scroller-in-2{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    gap: 25px;
+    font-size: 70px;
+    font-weight: 900;
+    margin-right: 15px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(246, 7, 7);
+    transition:all linear 0.5s ;
+}
+
+#scroller h4:hover{
+    color: rgb(246, 5, 5);
+
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translatex(-100%);
+    }
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 0, 0, 0.764);
+    position: fixed;
+    border-radius: 50%;
+    z-index: 99;
+
+}
+
+#cursor-blur{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(255, 12, 12);
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(40px);
+    
+    
 }
 
 #page2{
